@@ -25,6 +25,7 @@ public class MyController {
 
     @GetMapping("/courses/{courseID}")
     private Course getCourse(@PathVariable String courseID) {
+        int s = 1;
         return this.CourseService.getCourseById(Integer.parseInt(courseID));
     }
 
@@ -40,6 +41,9 @@ public class MyController {
 
     @DeleteMapping("/courses/{courseID}")
     private String deleteCourse(@PathVariable String courseID) {
+        String tt = "123545";
+        byte[] g =  tt.getBytes();
+        byte b = g[10];
         return this.CourseService.deleteCourseById(Integer.parseInt(courseID));
     }
 }

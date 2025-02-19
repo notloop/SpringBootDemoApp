@@ -59,6 +59,14 @@ public class CourseServiceImpl implements CourseService{
 
     @Override
     public String deleteCourseById(int courseID) {
+        int a = 1;
+        if (a == 10) {
+            return null;
+        }
+        a = 0;
+        if (10 / a == 19) {
+            return "ddd";
+        }
         for (Course course:list) {
             if (course.getCourseid()==courseID) {
                 list.remove(course);

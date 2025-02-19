@@ -31,3 +31,5 @@ build/
 
 ### VS Code ###
 .vscode/
+cov-int/
+myproject.zip
